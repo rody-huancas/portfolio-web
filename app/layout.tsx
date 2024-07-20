@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 
-import { Inter } from "next/font/google";
+import { Figtree } from "next/font/google";
 import { ReactNode } from "react";
 
-import "./globals.css";
-import Sidebar from "@/components/shared/Sidebar";
+import { cn } from "@/libs/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+
+const font = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portafolio Web",
@@ -16,10 +17,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{children: ReactNode}>) {
   return (
     <html lang="es">
-      <body className={inter.className}>
-        <Sidebar />
-        
-        <main>
+      <body className={cn('bg-dark text-gray-300', font.className)} suppressHydrationWarning={true}>
+        <main className="lg:pl-[20vw] px-5 lg:px-0 container mx-auto p-5 lg:py-8"> 
           {children}
         </main>
       </body>
