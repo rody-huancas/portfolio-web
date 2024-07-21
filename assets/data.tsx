@@ -1,4 +1,37 @@
-import { RiFileListLine, RiGithubLine, RiLinkedinLine } from "react-icons/ri";
+import { RiBriefcase2Line, RiFileListLine, RiGithubLine, RiHome3Line, RiLinkedinLine, RiMailLine, RiShapeLine, RiUserLine } from "react-icons/ri";
+
+export const menuRoutes = [
+  {
+    label: "Inicio",
+    icon: RiHome3Line,
+    href: "/",
+  },
+  {
+    label: "Proyectos",
+    icon: RiShapeLine,
+    href: "/projects",
+  },
+  {
+    label: "Empresas",
+    icon: RiBriefcase2Line,
+    href: "/ventures",
+  },
+  {
+    label: "Blog",
+    icon: RiFileListLine,
+    href: "/blog",
+  },
+  {
+    label: "Sobre Mí",
+    icon: RiUserLine,
+    href: "/about",
+  },
+  {
+    label: "Contacto",
+    icon: RiMailLine,
+    href: "/contact",
+  },
+];
 
 export const homeInformation = {
   image: "https://rodyhuancas.vercel.app/icons/favicon.svg",
