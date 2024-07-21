@@ -15,10 +15,10 @@ const HeroSection = () => {
           </div>
         
           <div className="max-w-3xl">
-            <h1 className="text-6xl font-extrabold text-white/90 mb-2">
+            <h1 className="text-4xl sm:text-6xl font-extrabold text-white/90 mb-2">
               {homeInformation.title}
             </h1>
-            <h2 className="text-4xl text-white/70 mb-5">
+            <h2 className="text-2xl text-white/70 mb-5">
               {homeInformation.subtitle}
             </h2>
             <p className="text-gray-500">{homeInformation.description}</p>
