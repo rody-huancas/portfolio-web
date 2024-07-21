@@ -18,7 +18,7 @@ export default function RootLayout({ children }: Readonly<{children: ReactNode}>
   return (
     <html lang="es">
       <body className={cn('bg-dark text-gray-300', font.className)} suppressHydrationWarning={true}>
-        <main className="lg:pl-[15vw] px-5 lg:px-0"> 
+        <main className="lg:pl-[300px] px-5 lg:px-0"> 
           {children}
         </main>
       </body>

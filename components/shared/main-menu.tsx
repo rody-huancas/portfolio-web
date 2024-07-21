@@ -11,9 +11,9 @@ const MainMenu = () => {
       href: "/",
     },
     {
-      label: "Experiencia",
+      label: "Proyectos",
       icon: RiShapeLine,
-      href: "/work",
+      href: "/projects",
     },
     {
       label: "Empresas",
