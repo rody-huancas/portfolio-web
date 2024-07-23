@@ -18,10 +18,10 @@ const HeroSection = () => {
             <h1 className="text-4xl sm:text-6xl font-extrabold text-white/90 mb-2">
               {homeInformation.title}
             </h1>
-            <h2 className="text-2xl text-white/70 mb-5">
+            <h2 className="text-2xl text-white/80 mb-5">
               {homeInformation.subtitle}
             </h2>
-            <p className="text-gray-500">{homeInformation.description}</p>
+            <p className="text-white/70">{homeInformation.description}</p>
           </div>
         
           <div className="flex items-center gap-5">

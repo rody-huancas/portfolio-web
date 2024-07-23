@@ -22,11 +22,11 @@ const Sidebar = ({ showMenu, onClose }: SidebarProps) => {
         <section className="p-8 border-b border-gray-500/30">
           <Link
             href={"/"}
-            className="text-2xl text-white hover:text-primary transition-colors duration-300"
+            className="text-3xl text-white hover:text-primary transition-colors duration-300"
           >
             Rody Huancas
           </Link>
-          <h3 className="text-sm text-gray-500 font-light">
+          <h3 className="text-base text-gray-300 font-light">
             Desarrollador Web
           </h3>
         </section>
