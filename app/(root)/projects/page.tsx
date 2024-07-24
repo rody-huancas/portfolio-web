@@ -18,8 +18,9 @@ const PageProjects = () => {
       <Title title="Proyectos Destacados" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-10 mb-10">
-        {projectsData.map((project) => (
+        {projectsData.map((project, index) => (
           <CardFeaturedWork
+            key={project.title}
             title={project.title}
             image={project.images[0]}
             category={project.category}
