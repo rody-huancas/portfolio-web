@@ -7,7 +7,7 @@ import ButtonSocialMedia from "@/components/ui/button-social-media";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="border-b border-gray-500/30 py-10">
+    <section id="home" className="border-b border-gray-500/30 py-16">
       <Container>
         <div className="space-y-10">
           <div className="flex justify-between items-center">

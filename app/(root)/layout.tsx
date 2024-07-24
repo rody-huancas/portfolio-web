@@ -3,7 +3,7 @@
 import { ReactNode, useState } from "react";
 
 import Footer from "@/components/shared/footer";
-import Sidebar from "@/components/shared/sidebar";
+import Sidebar from "@/components/shared/Sidebar";
 import ButtonIcon from "@/components/ui/button-icon";
 
 import { RiMenu2Line } from "react-icons/ri";
