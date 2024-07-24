@@ -10,8 +10,11 @@ import "./globals.css";
 const font = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rody Huancas",
-  description: "Rody Huancas, desarrollador web Full Stack. Explora mis proyectos y habilidades.",
+  title: "Rody Huancas | Desarrollador Web Full Stack",
+  description: "Soy Rody Huancas, un desarrollador web Full Stack apasionado por crear soluciones innovadoras y eficientes. Explora mi portafolio para ver mis proyectos destacados, habilidades en desarrollo de software, y cómo puedo ayudarte a alcanzar tus objetivos tecnológicos.",
+  icons: {
+    icon: "https://rodyhuancas.vercel.app/icons/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{children: ReactNode}>) {

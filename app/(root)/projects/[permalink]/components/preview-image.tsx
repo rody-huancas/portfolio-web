@@ -18,15 +18,14 @@ const PreviewImage = () => {
         {images.map((src, index) => (
           <div
             key={index}
-            className="relative w-32 h-24 rounded-xl group overflow-hidden cursor-pointer"
+            className="relative w-36 h-24 rounded-xl group overflow-hidden cursor-pointer"
             onClick={() => setSelectedImage(src)}
           >
             <Image
               src={src}
               alt={`Thumbnail ${index}`}
               layout="fill"
-              objectFit="cover"
-              className="rounded-xl group-hover:scale-105 transition-transform duration-300"
+              className="rounded-xl group-hover:scale-105 transition-transform duration-300 object-fill"
             />
           </div>
         ))}

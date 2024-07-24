@@ -13,9 +13,9 @@ const FeaturedWorkSection = () => {
   return (
     <section id="featuredWork" className="border-b border-gray-500/30 py-10">
       <Container>
-        <Title title="Trabajos Destacados" />
+        <Title title="Proyectos Destacados" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 gap-5 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 mb-10">
           <CardFeaturedWork
             href="/"
             image="https://rodyhuancas.vercel.app/images/tinttrail.webp"

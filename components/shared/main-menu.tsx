@@ -7,7 +7,6 @@ import { menuRoutes } from "@/assets/data";
 const MainMenu = () => {
   const pathname = usePathname();
 
-
   return (
     <ul>
       {menuRoutes.map((route) => (

@@ -12,9 +12,9 @@ export const menuRoutes = [
     href: "/projects",
   },
   {
-    label: "Empresas",
+    label: "Experiencia",
     icon: RiBriefcase2Line,
-    href: "/ventures",
+    href: "/experience",
   },
   {
     label: "Blog",
@@ -38,7 +38,7 @@ export const homeInformation = {
   title: "Hola, soy Rody",
   subtitle: "Desarrollador Full Stack",
   description:
-    "+1 año como desarrollador Full Stack, me apasiona la tecnología y creo proyectos de código libre. Transformo ideas en realidad a través del código. ¡Bienvenido a mi portafolio!",
+    "+1 año de experiencia como desarrollador Full Stack, me dedico a crear soluciones tecnológicas modernas y a llevar ideas a la realidad. Apasionado por el código libre. ¡Bienvenido a mi portafolio!",
   socialMedia: [
     {
       socialMedia: "LinkedIn",

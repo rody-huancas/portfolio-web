@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 
-import MainMenu from "./main-menu";
 import { cn } from "@/libs/utils";
+
+import MainMenu from "./main-menu";
 
 interface SidebarProps {
   showMenu: boolean;
