@@ -1,13 +1,15 @@
 "use client";
 
-import Title from "@/components/ui/title";
-import Container from "@/components/ui/container";
-import CardBlog from "@/components/ui/card-blog";
-import Button from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+
+import Title from "@/components/ui/title";
+import Button from "@/components/ui/button";
+import CardBlog from "@/components/ui/card-blog";
+import Container from "@/components/ui/container";
 
 const BlogSection = () => {
   const router = useRouter();
+
   return (
     <section id="blog" className="border-b border-gray-500/30 py-10">
       <Container>

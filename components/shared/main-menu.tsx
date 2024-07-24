@@ -7,6 +7,12 @@ import { menuRoutes } from "@/assets/data";
 const MainMenu = () => {
   const pathname = usePathname();
 
+  const isActive = (href: string) => {
+    if (href === '/' && pathname !== '/') return false;
+    
+    return pathname === href || pathname.startsWith(href);
+  };
+
   return (
     <ul>
       {menuRoutes.map((route) => (
@@ -15,7 +21,7 @@ const MainMenu = () => {
             href={route.href}
             className={cn(
               "flex items-center gap-4 transition-colors duration-300 py-5 px-8 border-b border-gray-500/30 hover:bg-gray-500/5",
-              pathname === route.href ? "text-primary bg-gray-500/5" : "text-gray-500 hover:text-gray-500"
+              isActive(route.href) ? "text-primary bg-gray-500/5" : "text-gray-500 hover:text-gray-500"
             )}
           >
             <route.icon size={18} />

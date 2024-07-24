@@ -3,29 +3,29 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const images = [
-  "https://rodyhuancas.vercel.app/images/tinttrail.webp",
-  "https://rodyhuancas.vercel.app/images/erp-datec.webp",
-  "https://rodyhuancas.vercel.app/images/admin-dashboard.webp",
-];
+interface PreviewImageProps {
+  images: string[];
+  title: string;
+}
 
-const PreviewImage = () => {
+const PreviewImage = ({ images, title }: PreviewImageProps) => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
-    <div className="flex justify-center items-start gap-10 p-4">
-      <div className="grid gap-5">
+    <div className="flex flex-col-reverse xl:flex-row justify-center items-start gap-10 p-4">
+      <div className="w-full lg:w-auto grid grid-cols-3 xl:grid-cols-1 place-items-center gap-5 md:gap-10">
         {images.map((src, index) => (
           <div
             key={index}
-            className="relative w-36 h-24 rounded-xl group overflow-hidden cursor-pointer"
+            className="relative w-28 h-20 md:w-36 md:h-24 rounded-xl group overflow-hidden cursor-pointer"
             onClick={() => setSelectedImage(src)}
           >
             <Image
               src={src}
               alt={`Thumbnail ${index}`}
-              layout="fill"
-              className="rounded-xl group-hover:scale-105 transition-transform duration-300 object-fill"
+              fill
+              className="rounded-xl group-hover:scale-105 transition-transform duration-300 object-cover"
+              sizes="(max-width: 640px) 100vw, 50vw"
             />
           </div>
         ))}
@@ -33,11 +33,11 @@ const PreviewImage = () => {
       <div className="relative w-auto h-auto rounded-3xl overflow-hidden">
         <Image
           src={selectedImage}
-          alt="Large Image"
-          layout="responsive"
+          alt={`Imagen de ${title}`}
           width={1200}
           height={800}
           className="rounded-3xl object-cover"
+          priority
         />
       </div>
     </div>

@@ -6,6 +6,7 @@ import Title from "@/components/ui/title";
 import Button from "@/components/ui/button";
 import Container from "@/components/ui/container";
 import CardFeaturedWork from "@/components/ui/card-featured-work";
+import { projectsData } from "@/assets/projects";
 
 const FeaturedWorkSection = () => {
   const router = useRouter();
@@ -16,18 +17,14 @@ const FeaturedWorkSection = () => {
         <Title title="Proyectos Destacados" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 mb-10">
-          <CardFeaturedWork
-            href="/"
-            image="https://rodyhuancas.vercel.app/images/tinttrail.webp"
-            category="Software"
-            title="TintTrail"
-          />
-          <CardFeaturedWork
-            href="/"
-            image="https://rodyhuancas.vercel.app/images/tinttrail.webp"
-            category="Software"
-            title="TintTrail"
-          />
+          {projectsData.slice(0, 2).map((project) => (
+            <CardFeaturedWork
+              title={project.title}
+              image={project.images[0]}
+              category={project.category}
+              technologies={project.technologies}
+            />
+          ))}
         </div>
         <Button
           label="Ver todos los proyectos"
