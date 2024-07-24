@@ -20,14 +20,14 @@ const BlogSection = () => {
             href="/blog/blog-1"
             title="Comandos de Git"
             category="Tecnología"
-            image="https://miro.medium.com/v2/resize:fit:828/format:webp/0*mnBPahCuD9Xf-grZ"
+            image="https://res.cloudinary.com/dmgazox1n/image/upload/v1721785751/Portfolio/Proyectos/tinttrail/tintrail_1.webp"
             date="19 Julio de 2024"
           />
           <CardBlog
             href="/blog/blog-1"
             title="Comandos de Git"
             category="Tecnología"
-            image="https://miro.medium.com/v2/resize:fit:828/format:webp/0*mnBPahCuD9Xf-grZ"
+            image="https://res.cloudinary.com/dmgazox1n/image/upload/v1721785751/Portfolio/Proyectos/tinttrail/tintrail_1.webp"
             date="19 Julio de 2024"
           />
         </div>

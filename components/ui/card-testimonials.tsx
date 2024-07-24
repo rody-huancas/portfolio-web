@@ -15,9 +15,7 @@ const CardTestimonials = () => {
       <div className="flex items-center gap-4">
         <div className="relative w-12 h-12 rounded-full">
           <Image
-            src={
-              "https://buyerpersona.com/wp-content/uploads/2017/06/Adele_WaistUp.jpg"
-            }
+            src={"/favicon.svg"}
             alt="Image"
             fill
             className="object-cover rounded-full"
