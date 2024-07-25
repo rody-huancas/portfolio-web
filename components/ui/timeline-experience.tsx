@@ -8,7 +8,10 @@ interface TimelineExperienceProps {
   className?: string;
 }
 
-const TimelineExperience = ({ experience, className }: TimelineExperienceProps) => {
+const TimelineExperience = ({
+  experience,
+  className,
+}: TimelineExperienceProps) => {
   return (
     <div className={cn("space-y-6 border-l-2 border-collapse pb-3", className)}>
       <div className="relative w-full">
@@ -34,7 +37,10 @@ const TimelineExperience = ({ experience, className }: TimelineExperienceProps) 
 
           <div className="space-y-3">
             {experience.description.map((description) => (
-              <p className="mt-2 max-w-screen-lg text-base text-gray-300/90 flex gap-3">
+              <p
+                key={description}
+                className="mt-2 max-w-screen-lg text-base text-gray-300/90 flex gap-3"
+              >
                 <span className="pt-1">
                   <TbPoint />
                 </span>
