@@ -29,16 +29,16 @@ const Header = ({ title, demo, description, repository, technologies }: HeaderPr
 
       <Title title={title} className="mb-5 mt-10 font-medium" />
 
-      <div className="grid md:grid-cols-3 gap-10">
+      <div className="flex flex-col md:grid md:grid-cols-3 gap-10">
         <div className="space-y-5 md:col-span-2 lg:col-span-3 xl:col-span-2">
           <p className="text-gray-300">{description}</p>
 
-          <div className="flex items-center gap-5">
+          <div className="flex flex-col sm:flex-row items-center gap-5">
             {demo && (
-              <ButtonLink label="Ver Demo" href={demo} className="w-auto" />
+              <ButtonLink label="Ver Demo" href={demo} className="w-full text-center sm:w-auto" />
             )}
             {repository && (
-              <ButtonLink label="Ver Repositorio" href={repository} className="w-auto" />
+              <ButtonLink label="Ver Repositorio" href={repository} className="w-full text-center sm:w-auto" />
             )}
           </div>
         </div>
@@ -46,7 +46,7 @@ const Header = ({ title, demo, description, repository, technologies }: HeaderPr
         <div className="col-span-3 md:col-span-1 lg:col-span-3 xl:col-span-1 space-y-4">
           <span className="font-semibold">Tecnologías usadas:</span>
 
-          <div className="col-span-3 md:col-span-1 lg:col-span-3 xl:col-span-1 flex items-center gap-3 flex-wrap">
+          <div className="col-span-3 md:col-span-1 lg:col-span-3 xl:col-span-1 flex items-center gap-2 flex-wrap">
             {technologies &&
               technologies.map((technology) => (
                 <BadgeTechnology key={technology} technology={technology} />

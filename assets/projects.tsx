@@ -11,7 +11,7 @@ export const projectsData = [
     ],
     demo: "https://tinttrail.netlify.app/",
     respository: "https://github.com/rody-huancas/TintTrail-app",
-    technologies: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "Vite"],
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
   },
   {
     title: "Plantilla de Panel Administrativo",
@@ -25,6 +25,6 @@ export const projectsData = [
     ],
     demo: "https://react-template-dashboard.vercel.app/",
     respository: "https://github.com/rody-huancas/react-template-dashboard",
-    technologies: ["React", "JavaScript", "Tailwind CSS", "Vite"],
+    technologies: ["React", "JavaScript", "Tailwind CSS"],
   },
 ];

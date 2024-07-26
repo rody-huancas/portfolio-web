@@ -13,11 +13,11 @@ const PreviewImage = ({ images, title }: PreviewImageProps) => {
 
   return (
     <div className="flex flex-col-reverse xl:flex-row justify-center items-start gap-10 p-4">
-      <div className="w-full lg:w-auto grid grid-cols-3 xl:grid-cols-1 place-items-center gap-5 md:gap-10">
+      <div className="w-full lg:w-auto grid grid-cols-3 xl:grid-cols-1 place-items-center gap-5">
         {images.map((src, index) => (
           <div
             key={index}
-            className="relative w-28 h-20 md:w-36 md:h-24 rounded-xl group overflow-hidden cursor-pointer"
+            className="relative w-28 h-20 md:w-36 md:h-20 rounded-xl group overflow-hidden cursor-pointer"
             onClick={() => setSelectedImage(src)}
           >
             <Image
@@ -34,8 +34,8 @@ const PreviewImage = ({ images, title }: PreviewImageProps) => {
         <Image
           src={selectedImage}
           alt={`Imagen de ${title}`}
-          width={1200}
-          height={800}
+          width={800}
+          height={600}
           className="rounded-3xl object-cover"
           priority
         />
