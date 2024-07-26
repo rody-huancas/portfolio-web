@@ -33,7 +33,7 @@ const CardFeaturedWork = ({ image, category, title, technologies }: CardFeatured
           </h3>
         </div>
 
-        <div className="flex items-center gap-3 flex-wrap">
+        <div className="flex items-center gap-1 flex-wrap">
           {technologies &&
             technologies.map((technology) => (
               <BadgeTechnology key={technology} technology={technology} />
