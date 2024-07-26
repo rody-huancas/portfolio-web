@@ -2,6 +2,8 @@
 
 import { useRouter } from "next/navigation";
 
+import { blogData } from "@/assets/blog";
+
 import Title from "@/components/ui/title";
 import Button from "@/components/ui/button";
 import CardBlog from "@/components/ui/card-blog";
@@ -16,20 +18,7 @@ const BlogSection = () => {
         <Title title="Blog" />
 
         <div className="space-y-5 mb-5">
-          <CardBlog
-            href="/blog/blog-1"
-            title="Comandos de Git"
-            category="Tecnología"
-            image="https://res.cloudinary.com/dmgazox1n/image/upload/v1721785751/Portfolio/Proyectos/tinttrail/tintrail_1.webp"
-            date="19 Julio de 2024"
-          />
-          <CardBlog
-            href="/blog/blog-1"
-            title="Comandos de Git"
-            category="Tecnología"
-            image="https://res.cloudinary.com/dmgazox1n/image/upload/v1721785751/Portfolio/Proyectos/tinttrail/tintrail_1.webp"
-            date="19 Julio de 2024"
-          />
+          {blogData.slice(0, 2).map((blog) => <CardBlog key={blog.title} blog={blog} /> )}
         </div>
 
         <Button

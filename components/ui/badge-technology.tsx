@@ -19,8 +19,8 @@ const BadgeTechnology = ({ technology }: BadgeTechnologyProps) => {
         color: attributes.color,
       }}
     >
-      <div style={{ color: attributes.color }}>{attributes.icon}</div>
-      <span>{technology}</span>
+      <div style={{ color: attributes.color }} className="text-sm sm:text-base">{attributes.icon}</div>
+      <span className="text-sm sm:text-base">{technology}</span>
     </div>
   );
 };
