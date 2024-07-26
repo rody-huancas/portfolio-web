@@ -34,7 +34,7 @@ export const menuRoutes = [
 ];
 
 export const homeInformation = {
-  image: "https://rodyhuancas.vercel.app/icons/favicon.svg",
+  image: "https://res.cloudinary.com/dmgazox1n/image/upload/v1721969366/Portfolio/Iconos/icon_rody.png",
   title: "Hola, soy Rody",
   subtitle: "Desarrollador Full Stack",
   description:
