@@ -3,7 +3,7 @@
 import { ReactNode, useState } from "react";
 
 import Footer from "@/components/shared/footer";
-import Sidebar from "@/components/shared/Sidebar";
+import Sidebar from "@/components/shared/sidebar";
 import ButtonIcon from "@/components/ui/button-icon";
 
 import { RiMenu2Line } from "react-icons/ri";
@@ -12,7 +12,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div>
+    <>
       <Sidebar showMenu={showMenu} onClose={() => setShowMenu(false)} />
 
       <ButtonIcon
@@ -24,7 +24,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
       {children}
 
       <Footer />
-    </div>
+    </>
   );
 };
 

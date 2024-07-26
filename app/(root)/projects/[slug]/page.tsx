@@ -16,7 +16,6 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const { slug } = params;
 
   const project = projectsData.find((p) => slugify(p.title) === slug);
-
   if (!project) return {};
 
   return {

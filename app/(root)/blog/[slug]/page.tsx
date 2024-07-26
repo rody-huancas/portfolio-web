@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import Container from "@/components/ui/container";
@@ -10,6 +11,19 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 
 interface BlogPageProps {
   params: { slug: string };
+}
+
+interface BlogPageProps {
+  params: { slug: string };
+}
+
+export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+  const { slug } = params;
+  const blog = blogData.find((p) => slugify(p.title) === slug);
+
+  if (!blog) return {};
+
+  return { title: `Blog | ${blog.title}`, description: blog.description, };
 }
 
 const BlogDetail = ({ params }: BlogPageProps) => {
