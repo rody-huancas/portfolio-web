@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode, useState } from "react";
+import { AppProgressBar as ProgressBar } from "next-nprogress-bar"
 
 import Footer from "@/components/shared/footer";
 import ButtonIcon from "@/components/ui/button-icon";
@@ -13,6 +14,8 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
 
   return (
     <>
+      <ProgressBar color="#fca311" height="4px" shallowRouting />
+
       <SidebarMenu showMenu={showMenu} onClose={() => setShowMenu(false)} />
 
       <ButtonIcon
