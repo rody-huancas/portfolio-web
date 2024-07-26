@@ -11,7 +11,7 @@ interface SidebarProps {
   onClose: () => void;
 }
 
-const Sidebar = ({ showMenu, onClose }: SidebarProps) => {
+const SidebarMenu = ({ showMenu, onClose }: SidebarProps) => {
   return (
     <>
       <aside
@@ -48,4 +48,4 @@ const Sidebar = ({ showMenu, onClose }: SidebarProps) => {
   );
 };
 
-export default Sidebar;
+export default SidebarMenu;

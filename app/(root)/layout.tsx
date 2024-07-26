@@ -3,8 +3,8 @@
 import { ReactNode, useState } from "react";
 
 import Footer from "@/components/shared/footer";
-import Sidebar from "@/components/shared/sidebar";
 import ButtonIcon from "@/components/ui/button-icon";
+import SidebarMenu from "@/components/shared/sidebar-menu";
 
 import { RiMenu2Line } from "react-icons/ri";
 
@@ -13,7 +13,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
 
   return (
     <>
-      <Sidebar showMenu={showMenu} onClose={() => setShowMenu(false)} />
+      <SidebarMenu showMenu={showMenu} onClose={() => setShowMenu(false)} />
 
       <ButtonIcon
         icon={RiMenu2Line}
