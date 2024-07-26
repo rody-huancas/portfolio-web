@@ -16,7 +16,7 @@ const FeaturedWorkSection = () => {
       <Container>
         <Title title="Proyectos Destacados" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 mb-10">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-16 mb-10">
           {projectsData.slice(0, 2).map((project) => (
             <CardFeaturedWork
               key={project.title}

@@ -14,7 +14,7 @@ interface CardFeaturedWorkProps {
 const CardFeaturedWork = ({ image, category, title, technologies }: CardFeaturedWorkProps) => {
   return (
     <Link href={`/projects/${slugify(title)}`} className="group">
-      <div className="relative w-full h-80 mb-5 overflow-hidden rounded-xl">
+      <div className="relative w-full h-60 sm:h-72 md:h-80 mb-5 overflow-hidden rounded-xl">
         <Image
           src={image}
           alt={`Imagen de ${title}`}

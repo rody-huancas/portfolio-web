@@ -1,5 +1,19 @@
 export const projectsData = [
   {
+    title: "App Mikrotik",
+    category: "Software",
+    description:
+      "Mikrotik es una página web diseñada para mostrar información sobre la empresa Mikrotik, incluyendo quiénes son, sus productos y servicios. La aplicación proporciona una interfaz moderna y atractiva desarrollada con tecnologías modernas. Mikrotik se centra en ofrecer soluciones de telecomunicaciones, destacando sus innovadores productos y servicios en el sector.",
+    images: [
+      "https://res.cloudinary.com/dmgazox1n/image/upload/v1722011440/Portfolio/Proyectos/mikrotik/mikrotik_1.png",
+      "https://res.cloudinary.com/dmgazox1n/image/upload/v1722011440/Portfolio/Proyectos/mikrotik/mikrotik_2.png",
+      "https://res.cloudinary.com/dmgazox1n/image/upload/v1722011440/Portfolio/Proyectos/mikrotik/mikrotik_3.png"
+    ],
+    demo: "https://app-mikrotik.netlify.app/",
+    respository: "https://github.com/rody-huancas/app-mikrotik-client",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  },
+  {
     title: "TintTrail - Paleta de Colores",
     category: "Software",
     description:

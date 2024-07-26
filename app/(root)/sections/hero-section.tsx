@@ -4,6 +4,7 @@ import { homeInformation } from "@/assets/data";
 
 import Container from "@/components/ui/container";
 import ButtonSocialMedia from "@/components/ui/button-social-media";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -19,7 +20,7 @@ const HeroSection = () => {
               />
             </div>
 
-            <a
+            <Link
               href="/contact"
               className="bg-[#03e26b]/5 py-3 px-4 hover:bg-[#03e26b]/10 text-[#03e26b] rounded-lg flex items-center justify-center transition-colors duration-300 ease-out"
             >
@@ -37,7 +38,7 @@ const HeroSection = () => {
                 ></path>
               </svg>
               Disponible para trabajar
-            </a>
+            </Link>
           </div>
 
           <div className="">

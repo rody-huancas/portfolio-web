@@ -1,4 +1,6 @@
 import { ReactElement } from "react";
+
+import { FiFramer } from "react-icons/fi";
 import { PiEmptyBold } from "react-icons/pi";
 import { FaReact, FaNodeJs, FaCss3Alt, FaJsSquare, FaHtml5, FaDocker, FaGithub } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiGraphql, SiNextdotjs, SiRedux, SiAxios, SiVite } from "react-icons/si";
@@ -81,6 +83,10 @@ export const technologyAttributes: Record<string, TechnologyAttributes> = {
   vite: {
     color: "#646CFF",
     icon: <SiVite />,
+  },
+  framermotion: {
+    color: "#f108b5",
+    icon: <FiFramer />
   },
 };
 
