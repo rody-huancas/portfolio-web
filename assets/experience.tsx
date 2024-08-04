@@ -1,7 +1,7 @@
 export const experienceData: ExperienceInterface[] = [
   {
     position: "Analista Desarrollador",
-    company: "Uiversidad Señor de Sipán (USS)",
+    company: "Universidad Señor de Sipán (USS)",
     date: "Desde Agosto 2024",
     description: [],
     actually: true,
