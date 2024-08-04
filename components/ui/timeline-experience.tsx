@@ -34,20 +34,24 @@ const TimelineExperience = ({
             </div>
             <span className="text-gray-100/70">{experience.date}</span>
           </div>
-
-          <div className="space-y-3">
-            {experience.description.map((description) => (
-              <p
-                key={description}
-                className="mt-2 max-w-screen-lg text-base text-gray-300/90 flex gap-3"
-              >
-                <span className="pt-1">
-                  <TbPoint />
-                </span>
-                {description}
-              </p>
-            ))}
-          </div>
+            
+          {
+            experience.description.length > 0 && (
+              <div className="space-y-3">
+                {experience.description.map((description) => (
+                  <p
+                    key={description}
+                    className="mt-2 max-w-screen-lg text-base text-gray-300/90 flex gap-3"
+                  >
+                    <span className="pt-1">
+                      <TbPoint />
+                    </span>
+                    {description}
+                  </p>
+                ))}
+              </div>
+            )
+          }
 
           <div className="flex flex-col sm:flex-row items-center gap-5">
             {experience.url_company && (

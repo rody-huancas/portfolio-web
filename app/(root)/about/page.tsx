@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <Container>
-      <div className="max-w-3xl mx-auto py-10">
+      <div className="max-w-3xl mx-auto">
         <Title title={aboutData.title} />
         <div className="space-y-3">
           {aboutData.description.map((data, index) => (
