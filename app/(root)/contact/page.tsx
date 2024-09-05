@@ -7,7 +7,7 @@ import ContactForm from "./components/ContactForm";
 export const metadata: Metadata = {
   title: "Rody Huancas | Contáctame",
   description:
-    "Ponte en contacto con Rody Huancas para discutir tus proyectos o cualquier consulta relacionada con desarrollo web. Estoy aquí para ayudarte a transformar tus ideas en soluciones tecnológicas efectivas.",
+    "Contáctame para discutir tus proyectos o resolver cualquier duda relacionada con el desarrollo web. Estoy disponible para ayudarte a transformar tus ideas en soluciones tecnológicas eficientes y personalizadas, enfocadas en tus necesidades.",
 };
 
 const Contact = () => {
