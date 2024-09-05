@@ -3,7 +3,11 @@ export const experienceData: ExperienceInterface[] = [
     position: "Analista Desarrollador",
     company: "Universidad Señor de Sipán (USS)",
     date: "Desde Agosto 2024",
-    description: [],
+    description: [
+      "Desarrollo e implementación de nuevas funcionalidades en aplicaciones internas, mejorando la eficiencia y usabilidad del sistema.",
+      "Resolución de problemas y atención a requerimientos específicos, colaborando con diferentes áreas para asegurar el cumplimiento de expectativas y necesidades de los usuarios.",
+      "Participación en la mejora continua del software mediante la identificación y solución de errores, optimizando la experiencia del usuario."
+    ],
     actually: true,
     url_company: "https://www.uss.edu.pe/uss/Inicio",
     url_recommendation_letter: "",
