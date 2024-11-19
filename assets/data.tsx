@@ -38,7 +38,7 @@ export const homeInformation = {
   title: "Hola, soy Rody",
   subtitle: "Desarrollador Full Stack",
   description:
-    "+2 año de experiencia como desarrollador Full Stack, me dedico a crear soluciones tecnológicas modernas y a llevar ideas a la realidad. Apasionado por el código libre. ¡Bienvenido a mi portafolio!",
+    "+2 años de experiencia como desarrollador Full Stack, me dedico a crear soluciones tecnológicas modernas y a llevar ideas a la realidad. Apasionado por el código libre. ¡Bienvenido a mi portafolio!",
   socialMedia: [
     {
       socialMedia: "LinkedIn",
