@@ -53,7 +53,7 @@ export const homeInformation = {
     {
       socialMedia: "Curriculum Vitae",
       icon: RiFileListLine,
-      href: "https://res.cloudinary.com/dmgazox1n/image/upload/v1721505199/Portfolio/PDF/HILDER%20RODY%20HUANCAS%20CHUQUIPOMA.pdf",
+      href: "https://res.cloudinary.com/dmgazox1n/image/upload/v1732036456/Portfolio/PDF/HILDER-RODY-HUANCAS-CHUQUIPOMA.pdf",
     },
   ],
 };
