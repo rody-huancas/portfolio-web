@@ -25,12 +25,12 @@ const CardFeaturedWork = ({ image, category, title, technologies }: CardFeatured
       </div>
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-1">
-          <h5 className="text-gray-500 uppercase tracking-widest font-medium">
+          <span className="text-gray-300 uppercase tracking-widest font-medium">
             {category}
-          </h5>
-          <h3 className="text-xl text-white group-hover:text-primary transition-colors duration-500 ease-in-out text-nowrap">
+          </span>
+          <h2 className="text-xl text-white group-hover:text-primary transition-colors duration-500 ease-in-out text-nowrap">
             {title}
-          </h3>
+          </h2>
         </div>
 
         <div className="flex items-center gap-1 flex-wrap">

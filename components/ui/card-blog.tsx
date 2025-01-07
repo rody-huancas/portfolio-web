@@ -18,9 +18,9 @@ const CardBlog = ({ blog }: CardBlogProps) => {
         />
       </div>
       <div className="space-y-2">
-        <h5 className="text-sm uppercase font-bold tracking-widest text-gray-500">
+        <h2 className="text-sm uppercase font-bold tracking-widest text-gray-500">
           {blog.category}
-        </h5>
+        </h2>
         <h3 className="text-white text-xl text-balance md:text-2xl mb-2 group-hover:text-primary transition-colors duration-300 capitalize">
           {blog.title}
         </h3>

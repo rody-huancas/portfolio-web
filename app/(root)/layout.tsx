@@ -22,6 +22,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
         icon={RiMenu2Line}
         onClick={() => setShowMenu(true)}
         className="lg:hidden fixed right-0 bottom-0 z-40 bg-primary text-white p-4 rounded-tl-lg rounded-bl-lg"
+        arial="Menu to open the navegation links"
       />
 
       {children}
