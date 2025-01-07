@@ -59,6 +59,7 @@ const HeroSection = () => {
                 key={social.socialMedia}
                 icon={social.icon}
                 href={social.href}
+                arial={social.ariaLabel}
               />
             ))}
           </div>

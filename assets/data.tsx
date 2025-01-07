@@ -44,16 +44,19 @@ export const homeInformation = {
       socialMedia: "LinkedIn",
       icon: RiLinkedinLine,
       href: "https://www.linkedin.com/in/rody-huancas/",
+      ariaLabel: "Abrir mi página de LinkedIn",
     },
     {
       socialMedia: "GitHub",
       icon: RiGithubLine,
       href: "https://github.com/rody-huancas",
+      ariaLabel: "Ver mi perfil de GitHub y mis proyectos",
     },
     {
       socialMedia: "Curriculum Vitae",
       icon: RiFileListLine,
       href: "https://res.cloudinary.com/dmgazox1n/image/upload/v1732036456/Portfolio/PDF/HILDER-RODY-HUANCAS-CHUQUIPOMA.pdf",
+      ariaLabel: "Ver mi currículum vitae en formato PDF",
     },
   ],
 };
